@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section {
+    @apply w-full flex flex-col text-white font-poppins gap-4;
+  }
+  .section-2 {
+    @apply px-6 sm:px-56 pt-32 ;
+  }
+  .input-form {
+    @apply shadow-sm text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white
+  }
+  .li-nav {
+    @apply hover:bg-white rounded-full p-4 text-white hover:text-slate-800 ;
+  }
+  .loader {
+    @apply w-screen h-screen bg-[#212538] flex mx-auto justify-center items-center text-white font-poppins
+  }
+
+  .hover-border {
+    @apply  hover:bg-slate-600/50 hover:border hover:border-slate-400 transition duration-300
+  }
+
+  .active-border {
+    @apply  bg-slate-600/50 border border-slate-400
+  }
+  /* ... */
+}
